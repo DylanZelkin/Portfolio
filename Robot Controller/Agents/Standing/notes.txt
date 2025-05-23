@@ -1,0 +1,50 @@
+config.training(
+    train_batch_size=128*30,
+    num_epochs = 30,
+    #lr = 1e-5,
+    lr=[
+        [0, 1e-5],
+        [100000, 1e-5]
+    ],
+    minibatch_size=64*6,
+    vf_clip_param=100,
+    clip_param=1,
+    vf_loss_coeff=1,
+    #kl_coeff = 0.05,
+    #kl_target = 0.1,
+    #grad_clip=5,
+    #lambda_ = 0.33
+)
+
+config.rl_module(
+        model_config={
+            'use_lstm': True,
+            'lstm_cell_size': 128,
+            'max_seq_len': 64,
+            "lstm_use_prev_action": True,
+            "lstm_use_prev_reward": True,
+
+            'fcnet_activation': 'elu',
+            'fcnet_hiddens': [128,128],
+
+            'use_attention': True,
+            'attention_num_heads': 2,
+            'attention_dim': 64,
+            "attention_use_n_prev_actions": 64,
+            "attention_use_n_prev_rewards": 64,
+            #'keep_per_episode_custom_metrics': True
+        },
+)
+config.environment( 
+    env=envName, 
+    env_config={
+        "envID": 0, 
+        "action": 0,
+        "transformation_rotation_weight": 1.0,
+        "action_diff_scaler": 0.0,
+        "action_less_energy_weight": 0.0,
+        "max_steps": 128
+    }
+)
+
+---->4800
