@@ -27,6 +27,7 @@
 
 ## Demonstrations
 - Link to view demos: https://1drv.ms/f/s!Am8UgeyMBo6ElXQLuiigCKk2_FLM
+- IF FOR SOME REASON YOU RECIEVE AN ACCESS DENIED ERROR UPON LOGGING INTO YOUR MICROSOFT ACCOUNT, CLOSE THE TAB AND OPEN A NEW TAB WITH THIS LINK AGAIN AND IT WILL GIVE YOU ACCESS (REFRESHING WILL NOT FIX IT), no idea why this happens....
 - These demos are contained on my personal drive so that you do not need to download anything, and can view all materials through a cloud version of Microsoft PowerPoint (if not viewing within Microsoft PowerPoint, the videos that are embedded within the presentation will not be able to play)
 - Each project contains a demo presentation inside called "Demo <project name>.pptx" and each presentation contains brief overviews, descriptions, processes, designs, architectures, and most importantly, videos that showcase results (slides with videos are labeled with: (DEMO VIDEO))
 - The drone is the only project without a video inside the demo (I did an in-person demo and forgot to record a video and the drone has already been dismantled and is being repurposed, sorry)
